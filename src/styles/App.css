@@ -73,3 +73,15 @@
 .navbar__links {
   margin-left: auto;
 }
+
+.navbar__links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: teal;
+}
+
+.navbar__links a:hover {
+  margin-right: 10px;
+  text-decoration: underline;
+  color: rgb(57, 180, 180);
+}

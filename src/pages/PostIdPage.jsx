@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react/cjs/react.development'
-import PostService from '../components/API/PostService'
+import PostService from '../API/PostService'
 import Loader from '../components/UI/Loader/Loader'
 import { useFetching } from '../hooks/useFetching'
 
@@ -43,7 +43,7 @@ const Postidpage = () => {
       ) : (
         <div>
           {comments.map((comm) => (
-            <div style={{ marginTop: 15 }}>
+            <div key={comm.id} style={{ marginTop: 15 }}>
               <h5>{comm.email}</h5>
               <div>{comm.body}</div>
             </div>
